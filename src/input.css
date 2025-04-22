@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+    --breakpoint-2xl: 1320px;
+    --color-primary: oklch(52% 0.105 223.128); 
+  }
+
+
+.navbar-fixed{
+  @apply fixed z-50 bg-white/10 backdrop-blur-3xl;
+  box-shadow: inset 0 -1px 0 0 rgba(0,0,0,0.1);
+}
+
+
+.line-hamburger{
+  @apply w-7 h-0.5 my-2 block bg-black;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-47;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply scale-0;
+}
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-47;
+}

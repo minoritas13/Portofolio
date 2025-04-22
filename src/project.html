@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="output.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="absolute top-0 left-0 w-full z-10 lg:top-7">
+    <div class="container mx-auto lg:border lg:border-slate-300 lg:rounded-full">
+      <div class="flex items-center justify-between relative lg:left-5">
+        <div class="px-3 py-2 flex items-center">
+          <a href="home.html" class="text-2xl font-bold text-white block">
+            <img src="/src/img/Logo.png" alt="Logo" class="w-10 h-5">
+          </a>
+          <a href="#">
+            <strong class="text-black mx-3">Rizqullah</strong>
+          </a>
+        </div>
+        <div class="flex items-center px-4">
+          <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+            <span class="line-hamburger origin-top-left transition duration-300 ease-in-out"></span>
+            <span class="line-hamburger transition duration-300 ease-in-out"></span>
+            <span class="line-hamburger origin-bottom-left transition duration-300 ease-in-out"></span>
+          </button>
+
+          <nav id="nav-menu"
+            class="hidden absolute bg-white shadow-lg max-w-60 w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none">
+            <ul class="block lg:flex">
+              <li class="group">
+                <a href="index.html" class="text-base text-black py-2 mx-8 flex group-hover:text-primary"> Beranda </a>
+              </li>
+              <li class="group">
+                <a href="about.html" class="text-base text-black py-2 mx-8 flex group-hover:text-primary"> About </a>
+              </li>
+              <li class="group">
+                <a href="project.html" class="text-base text-black py-2 mx-8 flex group-hover:text-primary"> Project
+                </a>
+              </li>
+              <li class="group">
+                <a href="form.html" class="text-base text-black py-2 mx-8 flex group-hover:text-primary"> Form </a>
+              </li>
+              <li class="group">
+                <a href="contact.html" class="text-base text-black py-2 mx-8 flex group-hover:text-primary"> Kontak </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header end -->
+
+  <!-- Main content section -->
+  <section class="my-16 top-16 w-full">
+    <div class="container mx-auto">
+      <div class="w-full self-center lg:text-center">
+        <h1 class="block font-extrabold text-7xl leading-25 text-primary lg:text-[150px] text-shadow-lg lg:mb-4 lg:mt-30">
+          MY-PROJECT
+        </h1>
+        <p class="text-lg text-gray-700">Lihat beberapa projek saya</p>
+      </div>
+  
+      <!-- Grid 3 kolom -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+        <!-- Card 1 -->
+        <div class="bg-white shadow-2xs py-5 px-3 flex flex-wrap mx-auto w-full">
+          <div class="border-1 rounded-2xl w-full flex justify-center">
+            <img src="img/totebag.png" alt="totebag" class="top-0 bottom-0 h-32 block">
+          </div>
+          <div class="mt-2">
+            <h4 class="font-bold text-xl">TOTEBAG EDISI 1</h4>
+            <p class="text-base">Tote bag ini menampilkan desain minimalis dan artistik dengan nuansa monokrom hijau di atas kain berwarna putih.</p>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="bg-white shadow-2xs py-5 px-3 flex flex-wrap mx-auto w-full">
+          <div class="border-1 rounded-2xl w-full flex justify-center">
+            <img src="img/botol.png" alt="botol" class="top-0 bottom-0 h-32 block">
+          </div>
+          <div class="mt-2">
+            <h4 class="font-bold text-xl">TUMBLER EDISI 1</h4>
+            <p class="text-base">Botol minum berwarna putih dengan desain minimalis, dihiasi tulisan "Error" dan ilustrasi garis peta Indonesia yang elegan.</p>
+          </div>
+        </div>
+  
+        <!-- Card 3 (Contoh tambahan, tinggal ganti gambar & teks sesuai kebutuhan) -->
+        <div class="bg-white shadow-2xs py-5 px-3 flex flex-wrap mx-auto w-full">
+          <div class="border-1 rounded-2xl w-full flex justify-center">
+            <img src="img/Azikra.png" alt="botol" class="top-0 bottom-0 h-32 block">
+          </div>
+          <div class="mt-2">
+            <h4 class="font-bold text-xl">PULANG SHORT MOVIE</h4>
+            <p class="text-base">Film Titik untuk Pulang mengisahkan perjalanan empat sahabat yang terpisah oleh waktu dan konflik batin. Setelah bertahun-tahun menjauh.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- end content -->
+  <script src="script.js"></script>
+</body>
+
+</html>
